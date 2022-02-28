@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_list_page">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_design_market_edit"
+        android:background="@drawable/market_top"
+        android:layout_alignParentTop="true"
+        />
+
+    <EditText
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="40dp"
+        android:id="@+id/title_wantist_edit"
+        android:hint="@string/title"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:autofillHints=""
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/title_wantist_edit"
+        android:layout_margin="40sp"
+        android:text="@string/update"
+        android:id="@+id/change_grocery_list"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top_design_market_edit"
+        android:id="@+id/header_edit"
+
+        >
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:id="@+id/edit_list"
+            android:layout_centerInParent="true"
+            android:hint="@string/enter_the_list"
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <ImageView
+            android:layout_width="40sp"
+            android:elevation="10dp"
+            android:id="@+id/edit_list_btn"
+            android:layout_height="40sp"
+            android:layout_marginStart="7sp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/edit_list"
+            android:src="@drawable/wishlist"
+            android:contentDescription="@string/login" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_edit"
+        android:id="@+id/edit_view_grcoery"
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notes_page"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notes_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_alignParentTop="true"
+        android:id="@+id/notes_topdesign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:padding="45dp"
+        android:text="@string/your_notes"
+        android:textColor="#FFFFFF"
+        android:textSize="26sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notes_topdesign"
+        android:layout_above="@+id/bottom_navi_notes"
+        android:padding="18dp"
+        >
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_recycler"
+            android:scrollbars="vertical"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/add_notes_btn"
+            android:layout_alignParentBottom="true"
+
+            android:src="@drawable/ic_baseline_note_add_24"
+            android:background="#596590"
+            app:maxImageSize="40dp"
+
+            android:contentDescription="@string/your_notes" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+        android:id="@+id/bottom_navi_notes"
+        app:itemIconTint="@drawable/selector_menu"
+        android:background="#D0EC76"
+        app:itemTextColor="@drawable/selector_menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+
+
+
+
+
+
+
+</RelativeLayout>

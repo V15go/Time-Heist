@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".edit_notes_page">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/edit_notes_top"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="32dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_note"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="@string/update"
+
+            android:id="@+id/save_edit_btn"
+            android:layout_marginStart="50dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="40dp"
+
+        android:layout_below="@id/edit_notes_top"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/save_edit_title"
+
+            android:hint="@string/enter_the_title"
+            android:text="@string/enter_the_title"
+
+            android:autofillHints=""
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/save_edit_content"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:gravity="top"
+            android:text="@string/enter_the_content_here"
+            android:padding="15sp"
+            android:hint="@string/enter_the_content_here"
+            android:autofillHints="" />
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
