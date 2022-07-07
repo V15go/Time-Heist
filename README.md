@@ -1,7 +1,7 @@
 
 # Time Heist ⏰
 
-Time Heist is an Android application with 3 built-in features to benefit the users to remind them in all means. The features include calendar wish reminders, grocery list, and notes.
+Time Heist is an Android application with 3 built-in features to benefit the users to remind them in all means. The features include calendar wish reminders, grocery list, and notes with seperate login and signup with google and facebook
 
 ## Features 
 
