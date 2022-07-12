@@ -8,13 +8,16 @@ Time Heist is an Android application with 3 built-in features to benefit the us
 - Calendar-wise reminders with notification to reminders
 - Notes to keep track of information themselves 
 - Grocery List  helps  remember items and avoid a return trip to the store.
+- Login & sign up with Google or Facebook Autentiation
+- Dark & light mode toogle
+
 
 
 ## Tech Stack
 
 - Front-end: Java, XML
 
-- Database: Firebase
+- Database: Firebase, Firebase autentiation, Cloud firestore
 
 
 ## Screenshots
